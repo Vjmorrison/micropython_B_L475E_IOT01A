@@ -47,7 +47,6 @@ def _read_hl_registers(addr, reg_h, reg_l):
 	hb = I2C_2.readfrom_mem(LSM6DSL_ADDR, reg_h, 1)
 	lb = I2C_2.readfrom_mem(LSM6DSL_ADDR, reg_l, 1)
 	byte_value = struct.unpack('>H', hb+lb)[0]
-	# value = byte_value / 16.0  #wat?
 	return byte_value, hb[0], lb[0]
 
 def get_temp():
