@@ -16,7 +16,7 @@ Modified from the following [tutorial](https://forum.micropython.org/viewtopic.p
 3. go to <micropython_dir>/ports/stm32
 4. make BOARD=B_L475E_IOT01A CROSS_COMPILE=<Path where you uncompressed the toolchain>/bin/arm-none-eabi-
 
-That will compile the HEX files needed to flash the board.  The next step however is odd.
+That will compile the HEX files needed to flash the board.  The next step however involves a Windows PC.  This is because I had the hardest time getting my Mac to flash the STM32 over stlink or any other system, and all of STM's tools are primarily windows based.
 
 5. Transfer the HEX file to a Windows PC
 6. Install [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html)
