@@ -49,6 +49,11 @@ Also I have had a few instances of the REPL locking up on me.  In these cases I 
 	- [x] 3D Accelerometer (Complete)
 	- [x] 3D Gyroscope (Complete)
 	- [x] Temperature (Complete)
+	- [ ] Pedometer
+	- [ ] Significant motion / Inactivity / Tilt
+	- [ ] FIFO
+	- [ ] Single / Double Tap
+	- [ ] Timer
 - [ ] 260-1260 hPa absolute digital output barometer (LPS22HB)
 - [ ] Time-of-Flight and gesture-detection sensor (VL53L0X)
 - [ ] 2 push-buttons (user and reset)
