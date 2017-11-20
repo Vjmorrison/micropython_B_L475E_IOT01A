@@ -14,9 +14,9 @@ Modified from the following [tutorial](https://forum.micropython.org/viewtopic.p
 1. git clone https://github.com/micropython/micropython.git
 2. Download and unzip the [ARM toolchain](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads) somewhere.
 3. go to <micropython_dir>/ports/stm32
-4. make BOARD=B_L475E_IOT01A CROSS_COMPILE=<Path where you uncompressed the toolchain>/bin/arm-none-eabi-
+4. make BOARD=B_L475E_IOT01A CROSS_COMPILE=/Path/where/you/uncompressed/the/toolchain/.../bin/arm-none-eabi-
 
-That will compile the HEX files needed to flash the board.  The next step however is odd.
+That will compile the HEX files needed to flash the board.  The next step however involves a Windows PC.  This is because I had the hardest time getting my Mac to flash the STM32 over stlink or any other system, and all of STM's tools are primarily windows based.
 
 5. Transfer the HEX file to a Windows PC
 6. Install [ST-Link Utility](http://www.st.com/en/development-tools/stsw-link004.html)
@@ -49,6 +49,11 @@ Also I have had a few instances of the REPL locking up on me.  In these cases I 
 	- [x] 3D Accelerometer (Complete)
 	- [x] 3D Gyroscope (Complete)
 	- [x] Temperature (Complete)
+	- [ ] Pedometer
+	- [ ] Significant motion / Inactivity / Tilt
+	- [ ] FIFO
+	- [ ] Single / Double Tap
+	- [ ] Timer
 - [ ] 260-1260 hPa absolute digital output barometer (LPS22HB)
 - [ ] Time-of-Flight and gesture-detection sensor (VL53L0X)
 - [ ] 2 push-buttons (user and reset)
